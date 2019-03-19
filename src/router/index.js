@@ -4,8 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Test from '@/pages/test'
 
 Vue.use(Router)
-// var ORINGIN='api';
-// Vue.prototype.BASEURL = ORINGIN=='test' ? 'test...' : 'api...';
+
 export default new Router({
   routes: [
     {
