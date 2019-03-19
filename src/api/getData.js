@@ -1,6 +1,5 @@
 import axios from 'axios'
-var baseUrl= axios.defaults.baseURL;
-console.log(baseUrl,3324);
+var baseUrl= sessionStorage.getItem('baseURL');
 export const getUserInfo = (data,callback)=>{
 	axios.post(`${baseUrl}/app/getUserInfo`, qr.stringify(data))
     .then((msg)=>{

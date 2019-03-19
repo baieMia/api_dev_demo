@@ -10,7 +10,7 @@ import {getUserInfo} from '../api/getData.js'
 export default {
   data() {
     return {
-       links:axios.defaults.baseURL
+       links:sessionStorage.getItem('baseURL')
     }
   },
   components: {
