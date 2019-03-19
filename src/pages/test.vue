@@ -1,15 +1,16 @@
  <template v-for="item in mainList">
     <div>
-        <p>接口链接：{origin}</p>
-        <p>域名：</p>
+        <p>接口链接：{{links}}</p>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
+import axios from 'axios'
+import {getUserInfo} from '../api/getData.js'
 export default {
   data() {
     return {
-       
+       links:axios.defaults.baseURL
     }
   },
   components: {
